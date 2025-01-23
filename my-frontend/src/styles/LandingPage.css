@@ -1,0 +1,60 @@
+/* Landing page wrapper */
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full screen height */
+    background-color: #f8f9fa; /* Light background color */
+  }
+  
+  /* Centered container */
+  .landing-page-container {
+    background-color: white; /* Match app's container color */
+    padding: 30px 40px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 500px;
+    width: 90%; /* Responsive */
+    text-align: center;
+  }
+  
+  /* Title */
+  .landing-page-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Neutral text color */
+  }
+  
+  /* Description list */
+  .landing-page-container ol {
+    text-align: left;
+    margin: 10px 0 20px;
+    color: #555; /* Slightly lighter text color */
+    line-height: 1.6;
+  }
+  
+  /* Buttons container */
+  .landing-page-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  /* Button styles */
+  .landing-page-buttons button {
+    width: 100%;  /* Make the button the same width as the input fields */
+    max-width: 400px; /* Ensure the button doesn't get too wide */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .landing-page-buttons button:hover {
+    background-color: #0056b3; /* Darker primary color on hover */
+  }
+  

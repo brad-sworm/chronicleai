@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px; /* Scaled down width */
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* White background for the card effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    width: 90%; /* Scale down width for responsiveness */
+  }
+  
+  .chart-container:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+  }
+  
+  .chart-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .chart {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 767px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .chart-container {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+  
+    .chart {
+      height: 300px;
+    }
+  
+    .chart-container h2 {
+      font-size: 1.25rem;
+    }
+  }
+  

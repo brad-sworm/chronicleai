@@ -1,0 +1,61 @@
+/* Insights.css */
+.dashboard-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background */
+
+}
+
+.card-container {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto; /* Center the card */
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .search-bar {
+    width: 90%;
+    margin: 0 auto 20px;
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+  }
+  
+  .media {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 5px;
+  }
+  

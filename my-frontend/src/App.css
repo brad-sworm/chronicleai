@@ -1,0 +1,109 @@
+/* General App Styling */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Popup Overlay */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dimmed background */
+  display: flex;
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Popup Content */
+.popup-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  max-width: 500px; /* Maximum width for larger screens */
+  width: 90%; /* Responsive width for smaller screens */
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-out; /* Smooth popup animation */
+}
+
+/* Popup Heading */
+.popup-content h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Popup Instructions */
+.popup-content ol {
+  text-align: left;
+  margin: 10px 0 20px 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Close Button */
+.popup-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+.popup-content button:hover {
+  background: #0056b3;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
