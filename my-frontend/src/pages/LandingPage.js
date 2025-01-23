@@ -18,10 +18,10 @@ const LandingPage = () => {
           <Link to="/authpage">
             <button>Sign Up</button>
           </Link>
-          <Link to="/stored-entries">
+          <Link to="/Dashboard">
             <button>Demo: Stored Entries</button>
           </Link>
-          <Link to="/insights">
+          <Link to="/Insights">
             <button>Demo: Get Insights</button>
           </Link>
         </div>
