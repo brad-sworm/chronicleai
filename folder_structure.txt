@@ -1,0 +1,17 @@
+memory_app/
+├── my-backend/
+│   ├── api.js          # Your API routes file
+│   ├── config/
+│   ├── controllers/
+│   ├── index.js        # Your main server file
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   └── utils/
+└── my-frontend/
+    ├── public/
+    └── src/
+        ├── components/
+        ├── pages/
+        ├── services/
+        └── styles/

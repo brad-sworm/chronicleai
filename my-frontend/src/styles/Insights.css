@@ -1,0 +1,366 @@
+/* Insights.css */
+.insights-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background */
+  min-height: 100vh;
+}
+
+.insights-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #343a40; /* Darker text for contrast */
+}
+
+.card-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 10px 0;
+  padding: 20px;
+  background-color: #ffffff; /* White card */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Highlight on hover */
+}
+
+.card-container h4,
+.card-container p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+      width: 95%;
+      padding: 15px;
+  }
+
+  .insights-title {
+      font-size: 1.5rem;
+  }
+}
+
+/* Expander container styled like a card */
+.expander-container {
+  cursor: pointer;
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #ffffff; /* White card */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.expander-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Highlight on hover */
+}
+
+.expander-container.expanded {
+  padding-bottom: 20px;
+  max-height: 500px;
+}
+
+.bouncing-icon {
+  font-size: 40px;
+  color: #ff6347;
+  animation: bounce 1.5s infinite, lightBulbOn 2s ease-in-out infinite;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  content: '\f0eb'; /* Font Awesome light bulb icon */
+  font-family: 'Font Awesome 5 Free'; /* Ensure Font Awesome is loaded */
+  font-weight: 900;
+}
+
+/* Keyframes for the bounce effect */
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+/* Keyframes for the light bulb turning on */
+@keyframes lightBulbOn {
+  0% {
+      transform: scale(1);
+      opacity: 0.6;
+  }
+  50% {
+      transform: scale(1.2);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0.6;
+  }
+}
+
+/* When strategy is visible */
+.expander-container p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+  .expander-container {
+      width: 95%;
+      padding: 15px;
+  }
+}
+
+.bouncing-icon {
+  font-size: 40px;
+  color: #ff6347;
+  animation: bounce 1.5s infinite, lightBulbOn 2s ease-in-out infinite;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Keyframes for the bounce effect */
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+/* Keyframes for the light bulb turning on */
+@keyframes lightBulbOn {
+  0% {
+      transform: scale(1);
+      opacity: 0.6;
+  }
+  50% {
+      transform: scale(1.2);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0.6;
+  }
+}
+
+/* Expander container styled like a card */
+.expander-container {
+  cursor: pointer;
+  width: 90%; /* Same width as other containers */
+  max-width: 800px; /* Same max-width as other containers */
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #ffffff; /* White card */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: max-height 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden; /* Prevent content overflow */
+  max-height: 150px; /* Default height before expansion */
+}
+
+.expander-container.expanded {
+  max-height: 500px; /* Increased height when expanded */
+}
+
+.bouncing-icon {
+  font-size: 40px;
+  color: #ff6347;
+  animation: bounce 1.5s infinite, lightBulbOn 2s ease-in-out infinite;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes lightBulbOn {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+.expander-container p {
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .expander-container {
+    width: 95%; /* Match responsive width */
+    padding: 15px;
+  }
+}
+.mental-health-strategy-container {
+  background-color: #f7f7f7;  /* Light background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.strategy-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.strategy-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.strategy-main,
+.strategy-steps {
+  margin-bottom: 20px;
+}
+
+.steps-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.steps-table th,
+.steps-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.steps-table th {
+  background-color: #f0f0f0;
+  text-align: left;
+}
+
+.steps-table td {
+  text-align: left;
+}
+
+
+.mental-health-strategy-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.strategy-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.strategy-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.strategy-main,
+.strategy-steps,
+.external-resources {
+  margin-bottom: 20px;
+}
+
+.steps-list,
+.resources-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.steps-list li,
+.resources-list li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.steps-list li strong,
+.resources-list li strong {
+  font-weight: bold;
+}
+
+.external-resources a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.external-resources a:hover {
+  text-decoration: underline;
+}
+
+.steps-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.steps-table th,
+.steps-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.steps-table th {
+  background-color: #f4f4f4;
+}
+
+.steps-table a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.steps-table a:hover {
+  text-decoration: underline;
+}
+.strategy-table, .steps-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.strategy-table td, .steps-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.steps-table td {
+  padding-left: 15px;
+}

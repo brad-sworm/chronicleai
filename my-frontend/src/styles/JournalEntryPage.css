@@ -1,0 +1,121 @@
+/* Global Body Styling */
+body {
+  background-color: #f8f9fa; /* Light background matching the page */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Adjust to your preferred font */
+}
+
+/* Journal Entry Container */
+.journal-entry-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  padding: 20px;
+  background-color: #f8f9fa; /* Match the page background */
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+/* Title Styling */
+.journal-entry-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #343a40; /* Darker text for contrast */
+  text-align: center; /* Center-align the title */
+  margin-top: 20px; /* Ensure title has space from the top */
+}
+
+/* Individual Section Containers */
+.journal-entry-section {
+  width: 100%;
+  max-width: 800px; /* Adjust based on design preferences */
+  margin-bottom: 30px; /* Standardized spacing between cards */
+  background-color: #fff; /* White background for each section */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit Section */
+.submit-section button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px; /* Align button with sections */
+}
+
+.submit-section button:hover {
+  background-color: #45a049;
+}
+
+.submit-section button:focus {
+  outline: none;
+}
+
+/* JournalEntryPage.css */
+.journal-entry-page {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.card-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; /* Standardized spacing between cards */
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto; /* Center align the card */
+}
+
+.bold-header {
+  font-weight: bold; /* Make the first header bold */
+}
+
+.normal-header {
+  font-weight: normal; /* Keep the second header normal weight */
+}
+
+/* Ensure consistent width for wide-card */
+.wide-card {
+  max-width: 800px; /* Adjust based on design preferences */
+  width: 90%; /* Responsive width */
+  margin-bottom: 30px; /* Standardized spacing between cards */
+}
+
+/* JournalEntryPage.css or a relevant CSS file */
+.auth-message {
+  text-align: center;
+  margin-bottom: 30px; /* Standardized spacing between cards */
+  background-color: #fff; /* Match the background of other containers */
+  padding: 20px;
+  border-radius: 8px; /* Match the border radius of other containers */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Match the shadow of other containers */
+  max-width: 800px; /* Ensure the same max-width */
+  width: 90%; /* Ensure the same responsive width */
+}
+
+.auth-message p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.auth-message a {
+  display: inline-block;
+  margin-top: 10px; /* Keep the link margin-top consistent */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.auth-message a:hover {
+  background-color: #0056b3;
+}
