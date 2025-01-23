@@ -1,0 +1,9 @@
+# Ignore environment variables file
+.env
+
+# Ignore other sensitive files
+thinking-digit-447719-e5-ccd307e0e31b.json
+thinking-digit-447719-e5-4de8e4b19a4f.json
+
+# Node modules
+node_modules/
