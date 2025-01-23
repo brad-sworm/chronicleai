@@ -1,10 +1,16 @@
+
+require('dotenv').config(); 
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 
-// Store your API key in a variable for easy management
-const apiKey = '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'; // Hardcoded API key
 
+const googleCloudKey = process.env.GOOGLE_CLOUD_KEY;
+const openaiApiKey = process.env.OPENAI_API_KEY;
+
+
+// Store your API key in a variable for easy management
+const apiKey = openaiApiKey
 // Endpoint to get mental health strategies
 router.post('/mental-health-tips', async (req, res) => {
   const { keywords, sentimentSummary } = req.body;
