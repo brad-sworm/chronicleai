@@ -1,15 +1,24 @@
 const express = require('express');
 const multer = require('multer');
 const fs = require('fs');
+<<<<<<< HEAD
 require('dotenv').config();  // Load environment variables
+=======
+const path = require('path');
+>>>>>>> 66973b98958354c77c61e8130d8f436678df6649
 const { VideoIntelligenceServiceClient } = require('@google-cloud/video-intelligence');
 
 const router = express.Router();
 const upload = multer({ dest: 'uploads/' });
 
 const videoClient = new VideoIntelligenceServiceClient({
+<<<<<<< HEAD
   projectId: process.env.GOOGLE_CLOUD_PROJECT_ID,
   keyFilename: process.env.GOOGLE_CLOUD_KEYFILE  // Use the absolute path directly
+=======
+  projectId: 'thinking-digit-447719-e5',
+  keyFilename: path.join(__dirname, '../../thinking-digit-447719-e5-0ba1a8c42514.json') // Adjust this path
+>>>>>>> 66973b98958354c77c61e8130d8f436678df6649
 });
 
 router.post('/analyze-video', upload.single('media'), async (req, res) => {
@@ -50,11 +59,19 @@ router.post('/analyze-video', upload.single('media'), async (req, res) => {
 
     res.json({ labels, texts });
   } catch (error) {
+<<<<<<< HEAD
     console.error('Error analyzing video:', error.message);
     res.status(500).send({ error: error.message });
+=======
+    console.error('Error analyzing video:', error);
+    res.status(500).send('Error analyzing video');
+>>>>>>> 66973b98958354c77c61e8130d8f436678df6649
   }
 });
 
 module.exports = router;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 66973b98958354c77c61e8130d8f436678df6649
